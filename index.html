@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>ShopSmart</h1>
+</header>
+
+<!-- Banner / Slider -->
+<section class="banner">
+  <h2>🔥 Mega Sale - Up to 50% Off 🔥</h2>
+  <p>Best deals on Electronics, Fashion & Books</p>
+</section>
+
+<!-- Search + Filters -->
+<section class="container">
+  <div class="controls">
+    <input type="text" id="search" placeholder="🔍 Search products...">
+
+    <select id="category">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <select id="rating">
+      <option value="0">All Ratings</option>
+      <option value="4">4★ & above</option>
+      <option value="3">3★ & above</option>
+    </select>
+
+    <input type="range" id="priceRange" min="0" max="1000" value="1000">
+    <span id="priceValue">Max: $1000</span>
+
+    <select id="sort">
+      <option value="default">Sort</option>
+      <option value="low">Price Low→High</option>
+      <option value="high">Price High→Low</option>
+      <option value="rating">Rating High→Low</option>
+    </select>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="products" id="products"></div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 ShopSmart | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
